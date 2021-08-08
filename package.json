@@ -1,0 +1,30 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build site/index.html",
+    "start": "parcel site/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshithjv/wedding-invitation.git"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "website",
+    "html5"
+  ],
+  "author": "Harshith J.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshithjv/wedding-invitation/issues"
+  },
+  "homepage": "https://github.com/harshithjv/wedding-invitation#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
