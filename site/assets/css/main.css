@@ -296,7 +296,7 @@ input, select, textarea {
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
-		a:hover {
+		a:hover, h2.event-date:hover {
 			border-bottom-color: transparent;
 			color: #18bfef !important;
 		}
@@ -2968,7 +2968,7 @@ input, select, textarea {
 					display: block;
 					position: absolute;
 					top: 50%;
-					width: calc(50% - 6rem);
+					width: calc(30% - 6rem);
 					border-top: solid 2px;
 				}
 
@@ -2997,7 +2997,7 @@ input, select, textarea {
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
+		border-top-color: #cec8c8;
 	}
 
 /* Table */
@@ -3787,10 +3787,115 @@ input, select, textarea {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
+
+            div.address {
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                -moz-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -moz-align-items: -moz-stretch;
+                -webkit-align-items: -webkit-stretch;
+                -ms-align-items: -ms-stretch;
+                align-items: stretch;
+                text-align: center;
+                width: 100%;
+                padding: 0;
+                flex-direction: row;
+            }
+            div.address > * {
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+                padding: 4rem;
+				width: 50%;
+			}
+            div.address > div.map {
+                height: 150px;
+            }
+            div.address > div.p-text {
+                text-align: left;
+            }
+            @media screen and (max-width: 480px) {
+                div.address {
+                    margin-bottom: 3em;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                div.address {
+                    flex-direction: column;
+                    margin-bottom: 4.5em;
+                }
+                div.address > * {
+                    width: 100%;
+                    height: 100px;
+                }
+                div.address > div.p-text {
+                    font-size: 0.8em;
+                }
+            }
+            #intro > h1 { 
+                font-family: 'Sofia';
+            }
+            div.video-box > video {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: -1000;
+                opacity: 0.4;
+            }
+            div.video-box > div {
+                position: relative;
+                top: -250px;
+                background-color: blanchedalmond;
+                padding-top: 1.5em;
+            }
+            div.video-box > div > h3 {
+                font-size: 2em;
+            }
+            div.video-box > div > h3:hover {
+                color: #0c837e !important;
+            }
+
+            @media screen and (max-width: 540px) {
+                div.video-box > div {
+                    top: -125px;
+                    background-color: blanchedalmond;
+                    padding-top: 1.5em;
+                }
+                div.video-box > div > h3 {
+                    font-size: 1em;
+                }
+            }
+            .map-responsive{
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            
+            .map-responsive iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
 
 			#main > .post.featured {
 				text-align: center;
@@ -3881,6 +3986,10 @@ input, select, textarea {
 					border-top-width: 0;
 				}
 
+
+                #main > .posts > article > header > h2 {
+                    font-family: 'Petit Formal Script';
+                }
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
