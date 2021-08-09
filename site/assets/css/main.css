@@ -3848,6 +3848,7 @@ input, select, textarea {
             }
             #intro > h1 { 
                 font-family: 'Sofia';
+                text-shadow: 4px 4px #ff7f50;
             }
             div.video-box > video {
                 object-fit: cover;
