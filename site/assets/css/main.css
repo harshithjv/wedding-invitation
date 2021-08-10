@@ -3828,22 +3828,36 @@ input, select, textarea {
             div.address > div.p-text {
                 text-align: left;
             }
+            span.map-fail {
+                display: flex;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                font-size: 0.7em;
+            }
             @media screen and (max-width: 480px) {
                 div.address {
-                    margin-bottom: 3em;
+                    margin-bottom: 1em;
                 }
             }
             @media screen and (max-width: 540px) {
                 div.address {
                     flex-direction: column;
-                    margin-bottom: 4.5em;
+                    margin-bottom: 3.5em;
+                    height: 451px;
                 }
                 div.address > * {
                     width: 100%;
-                    height: 100px;
+                    height: 200px;
+                    padding: 3rem;
                 }
                 div.address > div.p-text {
                     font-size: 0.8em;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                div.address > * {
+                    padding: 1.5rem;
+                    margin-bottom: 2.5em;
                 }
             }
             #intro > h1 { 
@@ -3859,6 +3873,9 @@ input, select, textarea {
                 left: 0;
                 z-index: -1000;
                 opacity: 0.4;
+            }
+            div.video-box.mehandi > video {
+                opacity: 0.8;
             }
             div.video-box > div {
                 position: relative;
@@ -3888,6 +3905,7 @@ input, select, textarea {
                 padding-bottom:56.25%;
                 position:relative;
                 height:0;
+                display: flex;
             }
             
             .map-responsive iframe{
@@ -3913,7 +3931,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 2rem 1rem 1rem 1rem ;
 				}
 
 					#main > .post header.major > .date {
@@ -4423,6 +4441,11 @@ input, select, textarea {
 		#footer p {
 			font-size: 0.8rem;
 		}
+        #footer form label.header {
+            text-align: center;
+            font-size: 1.7rem;
+            text-decoration: none;
+        }
 
 		@media screen and (max-width: 980px) {
 
@@ -4513,20 +4536,26 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
-		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
+		/* color: rgba(255, 255, 255, 0.25); */
+		/* cursor: default; */
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-size: 1rem;
 		font-weight: 900;
-		letter-spacing: 0.075em;
-		line-height: 1.5;
+		/* letter-spacing: 0.075em;
+		line-height: 1.5; */
 		text-align: center;
 		text-transform: uppercase;
 		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		/* width: calc(100% - 4rem); */
+		/* max-width: 72rem; */
 		z-index: 2;
+        text-shadow: 2px 1px darkblue;
 	}
+    #copyright  span.cc {
+        text-transform: none;
+        font-weight: initial;
+        font-size: 1.2rem;
+    }
 
 		#copyright input, #copyright select, #copyright textarea {
 			color: #ffffff;
@@ -4815,3 +4844,22 @@ input, select, textarea {
 		}
 
 	}
+
+
+div.google-form {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+div.google-form > .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

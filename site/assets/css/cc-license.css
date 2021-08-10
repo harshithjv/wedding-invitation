@@ -1,0 +1,20 @@
+/**
+ * Source: https://stackoverflow.com/a/5215916 (by Ori: https://stackoverflow.com/users/582542/ori)
+ * jsFiddle: http://jsfiddle.net/VUA2N/
+ *
+ * Free for personal and commercial use under the CCA 3.0 license.
+ */
+
+@media screen {
+    @font-face {
+        font-family: 'CC-ICONS';
+        font-style: normal;
+        font-weight: normal;
+        src: url('http://mirrors.creativecommons.org/presskit/cc-icons.ttf') format('truetype');
+    }
+
+    span.cc {
+        font-family: 'CC-ICONS';
+        /* color: #ABB3AC; */
+    }
+}
