@@ -3929,6 +3929,24 @@ input, select, textarea {
 
 			}
 
+        .map-click {
+            color: #f44;
+        }
+        .map-click > .label{
+            display: none;
+            color: blue;
+        }
+        .map-click:hover {
+            color: #f44 !important;
+            font-size: 1.2em;
+        }
+        /* @media screen and (max-width: 540px) {
+            .map-click > .label{
+                display: unset;
+                top: unset;
+                left: unset;
+            }
+        } */
 		#main > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
