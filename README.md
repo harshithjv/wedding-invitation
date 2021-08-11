@@ -19,6 +19,7 @@ After forking & cloning:
 	 - `netlify login`
  - On terminal, change to repo directory. Make some changes and then:
 	 - `netlify deploy`
+     - _Note_: If you make changes to files like `.html` files, please push to github and run the above command. Some static updates locally don't get reflected when there is no build command supplied for the given repo.
  - Test the URL specified in the `Website Draft URL` given by above command output.
  - Once satisfied, can deploy to production URL by suffixing `--prod` option like this:
 	 - `netlify deploy --prod`
