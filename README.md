@@ -23,3 +23,21 @@ After forking & cloning:
  - Once satisfied, can deploy to production URL by suffixing `--prod` option like this:
 	 - `netlify deploy --prod`
 
+_Note:_ If your planning to build different project and reading this document for help, then observe the `netlify.toml` file in this project. The file contents are bare minimum:
+```
+[build]
+publish = "site"
+```
+Here `publish` is set to destination directory. For static and barebones html, css and vanilla JS sites, nothing else is required.
+
+## Why Netlify? And not GitHub pages?
+
+To be honest for this project Github pages is well-suited as it contains only static pages. Does not contain `react` or even `express` implementation.
+
+I'd initially thought I will utilize `functions` and `forms` features provided by `netlify`. Also I scraped the idea of converting these templates to `react` code, since this template depended on `jQuery` and other libraries. Conversion process lead lot of re-works for scroll animations and other parts of the template. On the downside I'd to replicate lot of code across 4 html pages.
+
+Overall `netlify` gave a fresh learning experience. So continued with deploying this on `netlify`. For `GitHub pages`, its preferred to place code in root of the directory or in `docs` directory ideally `gh-pages` where continues deployment is set up automatically once `Github pages` is enabled on the repo.
+
+For `netlify` it was not straight-forward and I'd to `google` a lot as to where the issue occured. Though they advertise that it's very easy using the `netlify`, adding `site` directly from `GitHub` repo does not deploy the website for static pages. It works well if you've set the `command` field to some build job which does not work for static sites like this even if you left the field blank.
+
+So there you've it. I'm not using the `netlify` to utilize its full potential. But it gave me lot of learning experience.
