@@ -23,6 +23,7 @@ After forking & cloning:
  - Test the URL specified in the `Website Draft URL` given by above command output.
  - Once satisfied, can deploy to production URL by suffixing `--prod` option like this:
 	 - `netlify deploy --prod`
+     - _Note:_ You'll see a message at netlify's site dashboard: `Site has not yet been deployed`. You can click on that message and you'll see `Deploy Preview` button. Click on it and you'll now see `Publish deploy` button. Clicking on that button or running the above command executes same operation.
 
 _Note:_ If your planning to build different project and reading this document for help, then observe the `netlify.toml` file in this project. The file contents are bare minimum:
 ```
@@ -30,6 +31,8 @@ _Note:_ If your planning to build different project and reading this document fo
 publish = "site"
 ```
 Here `publish` is set to destination directory. For static and barebones html, css and vanilla JS sites, nothing else is required.
+
+This repo's `README.md` has above steps with more details: https://github.com/Tanu-N-Prabhu/Multiplication-Table-App
 
 ## Why Netlify? And not GitHub pages?
 
