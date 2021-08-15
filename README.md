@@ -40,7 +40,7 @@ To be honest for this project Github pages is well-suited as it contains only st
 
 I'd initially thought I will utilize `functions` and `forms` features provided by `netlify`. Also I scraped the idea of converting these templates to `react` code, since this template depended on `jQuery` and other libraries. Conversion process lead lot of re-works for scroll animations and other parts of the template. On the downside I'd to replicate lot of code across 4 html pages.
 
-Overall `netlify` gave a fresh learning experience. So continued with deploying this on `netlify`. For `GitHub pages`, its preferred to place code in root of the directory or in `docs` directory ideally `gh-pages` where continues deployment is set up automatically once `Github pages` is enabled on the repo.
+Overall `netlify` gave a fresh learning experience. So continued with deploying this on `netlify`. For `GitHub pages`, its preferred to place code in root of the directory or in `docs` directory ideally `gh-pages` where continues deployment is set up automatically once `Github pages` is enabled on the repo. Also `netlify` allows us to specify custom `sub-domain` name in the url. The github page url will contain user-name and repo-name instead of custom site name. We need to rely on custom domain purchase for neater URL.
 
 For `netlify` it was not straight-forward and I'd to `google` a lot as to where the issue occured. Though they advertise that it's very easy using the `netlify`, adding `site` directly from `GitHub` repo does not deploy the website for static pages. It works well if you've set the `command` field to some build job which does not work for static sites like this even if you left the field blank.
 
